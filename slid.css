@@ -1,0 +1,63 @@
+body,  .wrap, .slide-content{
+     margin: 0;
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 600px; 
+    overflow-x: hidden; 
+    transition: all 1s ease-in;
+}
+
+.wrap{position: relative;}
+
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s ease-in;
+
+}
+
+.slide1{ background-image: url('https://i.pinimg.com/originals/5d/e2/42/5de24294bad21ec99931f4c362354f22.jpg');}
+.slide2{ background-image: url('https://lifehacker.ru/wp-content/uploads/2013/05/50800-2560x1600.jpg');}
+.slide3{ background-image: url('https://i0.wp.com/levashove.ru/wp-content/uploads/2018/11/dark-wallpapers.jpg?fit=1680%2C840&ssl=1');}
+
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span{
+    font-size: 5rem;
+    color: white;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent; 
+    left: 0;
+    margin-left: 30px;
+
+}
+
+#arrow-right{
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent #fff; 
+    right: 0;
+    margin-right: 30px;
+
+}
